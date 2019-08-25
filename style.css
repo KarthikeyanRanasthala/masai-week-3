@@ -1,0 +1,82 @@
+#start-screen {
+    display: grid;
+    grid-template: repeat(1, 50px) / repeat(4, 200px);
+    grid-gap: 10px;
+    margin: 30px 250px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 100px; 
+}
+
+input {
+    grid-area: span 1 / span 2;
+    text-align: center;
+    border: 1px solid black;
+}
+
+a {
+    grid-area: 2 / 2 / span 1 / span 2;
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+a:hover {
+    background: black;
+    color: white;
+}
+
+#game-screen {
+    display: grid;
+    grid-template: repeat(8, auto) / repeat(3, auto);
+    margin: 80px 0px;
+}
+
+#chess-grid {
+    display: grid;
+    grid-template: repeat(8, 60px) / repeat(8, 60px);
+    grid-area: 1 / 2 / span 8 / span 1;
+    margin-left: 100px;
+}
+
+#chess-grid div {
+    border: 1px solid black;
+    font-size: 40px;
+    padding: 5px 0px 0px 10px;
+}
+
+.cell-bg {
+    background: #c0c0c0;
+}
+
+p {
+    text-align: center;
+    margin: 0px 50px;
+    border: 1px solid black;
+}
+
+#player-1 {
+    grid-area: 8 / 4;
+    font-size: 30px;
+    align-self: end;
+}
+#player-1-pieces {
+    grid-area: 7 / 4;
+    align-self: end;
+    font-size: 30px;
+    text-overflow: clip;
+}
+#player-2 {
+    font-size: 30px;
+    align-self: start;
+}
+#player-2-pieces {
+    grid-area: 2 / 1;
+    font-size: 30px;
+    align-self: end;
+}
